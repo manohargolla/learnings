@@ -1,0 +1,17 @@
+[
+    {
+        "title":"Programming in C++",
+        "author":"Yeshwant Kanetkar",
+        "price":400
+    },
+    {
+        "title":"Programming in Java",
+        "author":"E Balagurusamy",
+        "price":300
+    },
+    {
+        "title":"Programming in JavaScript",
+        "author":"Austin",
+        "price":450
+    }
+]
