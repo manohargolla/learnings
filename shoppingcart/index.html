@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Shopping Cart</h1>
+    
+    <div id="shopping">
+        <div id="cart">
+            <p>
+            <label for="product">Product Name:</label>
+            <select name="product" id="product" >
+                <option disabled selected value> -- select an Product -- </option>
+        
+            </select>
+       </p>
+       <p>
+       <label for="quantity">quantity</label>
+       <input type="number" id="quantity" name="quantity">
+       </p>
+       <p>
+        <label for="price">price</label>
+        <input type="number" id="price" name="price">
+        </p>
+       <button id="btn" class="btn btn-primary">Add To Cart</button>
+
+        </div>
+        <div id="items">
+            <table id="row">
+                <tr>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th>Unit Price</th>
+                  <th>Subtotal</th>
+                  <th>Delete</th>
+                </tr>
+                
+              </table>
+
+              <h2>Total Price :<span id="total"></span></h2>
+
+
+
+
+        </div>
+    </div>
+
+    
+   
+    <script src="./script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+<style>
+    body{
+        background: grey;
+        margin: 0;
+        padding: 5%;
+    }
+    #shopping{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #cart{
+        padding-top: 100px;
+        width: 40%;
+    }
+    #items{
+        width: 60%;
+    }
+    
+    #cart p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    table, th, td {
+  border:2px solid white;
+}
+table{
+    width: 100%;
+}
+td{
+    height: 40px;
+}
+.delete{
+    padding: 0 30%;
+}
+
+</style>
+</html>
